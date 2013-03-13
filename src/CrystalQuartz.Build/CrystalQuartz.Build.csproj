@@ -34,20 +34,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Rosalia.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Rosalia.Core">
       <HintPath>..\packages\Rosalia.Core.0.2.0.15\lib\Rosalia.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Rosalia.TaskLib.MsBuild, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Rosalia.TaskLib.MsBuild">
       <HintPath>..\packages\Rosalia.TaskLib.MsBuild.0.2.0.15\lib\Rosalia.TaskLib.MsBuild.dll</HintPath>
     </Reference>
-    <Reference Include="Rosalia.TaskLib.NuGet, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Rosalia.TaskLib.NuGet">
       <HintPath>..\packages\Rosalia.TaskLib.NuGet.0.2.0.15\lib\Rosalia.TaskLib.NuGet.dll</HintPath>
     </Reference>
-    <Reference Include="Rosalia.TaskLib.Standard, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Rosalia.TaskLib.Standard">
       <HintPath>..\packages\Rosalia.Core.0.2.0.15\lib\Rosalia.TaskLib.Standard.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -68,7 +64,9 @@
     <None Include="Assets\Remote\Web.config.transform" />
     <None Include="Assets\Simple\SimpleSchedulerProvider.cs.pp" />
     <None Include="Assets\Simple\Web.config.transform" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
